@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<title>Calculadora IMC</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap" rel="stylesheet">
+	        <link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+<body>
+    <div class="contenedor">
+        <h2>Calculadora de Indice de Masa Corporal</h2>
+            <form>
+                <label for="altura">Altura (en cm):</label>
+                    <input type="numbrer" id="altura" name="altura">
+                <label for="peso">Peso (en kg):</label>
+                    <input type="numbrer" id="peso" name="peso">
+                <button type="button" onclick="calcular()">Calcular IMC</button>
+            </form>
+            <div>
+                <p>Su IMC es: <span id="IMC"></span></p>
+                <p>Usted tiene un: <span id="categoria"></span></p>
+            </div>
+    </div>
+    <script src="IMC.js"></script>
+</body>
